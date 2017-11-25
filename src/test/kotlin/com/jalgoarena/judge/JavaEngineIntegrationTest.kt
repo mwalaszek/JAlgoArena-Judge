@@ -47,9 +47,9 @@ open class JavaEngineIntegrationTest {
                 return client.newCall(apiServiceRequest).execute()
             }
 
-            val response = ping("https://jalgoarena-api.herokuapp.com/health")
+            val response = ping("https://jalgo-api.herokuapp.com/health")
             assertThat(response.isSuccessful).isTrue()
-            val response2 = ping("https://jalgoarena-problems.herokuapp.com/health")
+            val response2 = ping("https://jalgo-problems.herokuapp.com/health")
             assertThat(response2.isSuccessful).isTrue()
         }
     }
